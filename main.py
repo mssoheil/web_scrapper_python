@@ -58,6 +58,9 @@ def writeToFile(goodUrls: set, badUrls: set):
 
     for url in badUrls:
         bad.write(url + "\n")
+    
+    good.close()
+    bad.close()
         
 
 targetUrl = input("what is the url? ")
